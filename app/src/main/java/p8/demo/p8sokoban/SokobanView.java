@@ -275,7 +275,6 @@ public class SokobanView extends SurfaceView implements SurfaceHolder.Callback, 
         	canvas.drawBitmap(diamant,carteLeftAnchor+ diamants[i][1]*carteTileSize, carteTopAnchor+ diamants[i][0]*carteTileSize, null);
         }
     }
-
     // permet d'identifier si la partie est gagnee (tous les diamants à leur place)
     private boolean isWon() {
         for (int i=0; i< 4; i++) {
@@ -285,7 +284,6 @@ public class SokobanView extends SurfaceView implements SurfaceHolder.Callback, 
         }
         return true;
     }
-    
     // dessin du jeu (fond uni, en fonction du jeu gagne ou pas dessin du plateau et du joueur des diamants et des fleches)
     private void nDraw(Canvas canvas) {
 		canvas.drawRGB(44,44,44);
